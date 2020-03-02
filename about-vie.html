@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>About us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css">
+    <script src="http://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <link rel="icon" href="images-main/logo-2.png" type="image/icon type">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family:sans-serif;
+        }
+        .topnav {
+            overflow: hidden;
+            background-color: rgba(46,51,86);
+            display:flex;
+        }
+        .topnav a {
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 30px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+            position: absolute;
+            top:11px;
+            right: 40px;
+        }
+        .topnav img{
+            width: 180px;
+            height: 100px;
+        }
+        .sidebar {
+            height: 700px;
+            width: 220px;
+            overflow-x: hidden;
+            margin-top:50px;
+        }
+
+        .sidebar a {
+            height: 100px;
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 35px;
+            color: #818181;
+            background-color: #333;
+            display: block;
+        }
+
+        .sidebar a:hover {
+            opacity: 0.8;
+        }
+/* Next & previous buttons */
+        .slideshow-container {
+            max-width: 800px;
+            position: relative;
+            margin: 50px 0px 0px 200px ;
+        }
+
+            /* Next & previous buttons */
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 35%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+            /* Position the "next button" to the right */
+        .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+        }
+
+            /* On hover, add a black background color with a little bit see-through */
+        .prev:hover, .next:hover {
+            background-color: rgba(0,0,0,0.8);
+        }
+        .numbertext {
+            color: #f2f2f2;
+            font-size: 12px;
+            padding: 8px 12px;
+            position: absolute;
+            top: 0;
+        }
+        .fade {
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+        #section{
+            overflow: hidden;
+            text-align: center;
+            background-color: #34495e;
+            padding: 60px;
+        }
+
+        .border{
+            display: block;
+            margin: auto;
+            width: 160px;
+            height: 3px;
+            background-color: #3698db;
+        }
+        .avartar{
+            width: 200px;
+            height: 200px;
+            margin: 50px;
+            background-color: white;
+            border-radius: 50%;
+            filter: grayscale(100%);
+            transition: 0.1s all;
+        }
+        .avartar:hover{
+            filter: none;
+        }
+        .member{
+            width: 600px;
+            margin: 0 auto;
+            color: white;
+            text-align: justify;
+        }
+        #mb2{
+            display: none;
+        }
+        #mb3{
+            display: none;
+        }
+        .name{
+            display: block;
+            margin-bottom: 30px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 22px;
+        }
+        .member h1{
+            font-size: 20px;
+        }
+        #footer{
+            width: 100%;
+            height: 175px;
+            background-color: #333;
+            display: flex;
+        }
+        #all-game ul li{
+            color: white;
+            margin: 0px 100px;
+        }
+        #contact2 ul li{
+            color: white;
+            margin: 0px 100px;
+        }
+    </style>
+    </head>
+<body>
+    <div id="container">
+        <div class="topnav">
+                <img src="images-main/logo.png" style="width: 215px;height: 80px;margin: 0px 260px 0px 560px;padding: 10px;background-color: white;border-radius: 10px;">
+            <div id="button">
+                <a class="active" href="index-vie.html">Trang chủ</a>
+            </div>
+        </div>
+        <div id="article">
+            <div id="section">
+                <h1 style="text-transform: uppercase;margin-bottom: 60px;color: white;font-size: 40px;">Về chúng tôi</h1>
+                <span class="border"></span>
+                <div id="ps">
+                    <img src="images-about/avartar-khoa.jpg" class="avartar" id="ps1">
+                    <img src="images-about/avartar-me.jpg" class="avartar" id="ps2">
+                    <img src="images-about/avartar-anhloc.jpg" class="avartar" id="ps3">
+                </div>
+                <div class="member" id="mb1">
+                    <h1 class="name">Nguyễn Việt Khoa</h1>
+                    <span class="border"></span>
+                    <h1>Tuổi: 12.</h1>
+                    <h1>Sở thích: chơi game, bóng rổ.</h1>
+                    <h1>Trường học: THCS Nghĩa Tân</h1>
+                    <h1>Địa chỉ: Ngõ 35 Lê Đức Thọ,Hà Nội, Việt Nam.</h1>
+                </div>
+                <div class="member" id="mb2">
+                    <h1 class="name">Đỗ Trung Hiếu</h1>
+                    <span class="border"></span>
+                    <h1>Tuổi: 12.</h1>
+                    <h1>Sở thích: Chơi bóng đá.</h1>
+                    <h1>Trường học: THCS Cổ Bi.</h1>
+                    <h1>Địa chỉ: Cổ Bi, Gia Lâm, Hà Nội, Việt Nam.</h1>
+                </div>
+                <div class="member" id="mb3">
+                    <h1 class="name">Trần Quốc Lộc</h1>
+                    <span class="border"></span>
+                    <h1>Tuổi: 14.</h1>
+                    <h1>Sở thích: Chơi bóng rổ.</h1>
+                    <h1>Trường học: Lương Thế Vinh.</h1>
+                    <h1>Địa chỉ: 62 Kim Mã Thượng.</h1>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="all-game">
+                <h2 style="color: white;margin: 20px 100px;">Trò chơi nổi tiếng</h2>
+                <ul>
+                    <li>Assasin's Creed Odyssey</li>
+                    <li>Far Cry 5</li>
+                    <li>GTA 5</li>
+                    <li>Watch Dogs 2</li>
+                    <li>PlayerUnknown's Battlegrounds</li>
+                </ul>
+            </div>
+            <div id="contact2">
+                <h2 style="color: white;margin: 20px 100px;">Liên lạc</h2>
+                <ul>
+                    <li><a href="https://www.facebook.com/khoa.nguyenviet.1000469" target="_blank" style="text-decoration: none;color:white">Facebook</a></li>
+                    <li><a onclick="alert('dotrunghieustaw@gmail.com')" style="text-decoration: none;">Gmail</a></li>
+                </ul>
+            </div>
+            <h2 style="color:white;margin: 40px 0px 0px 100px;">Đường dây nóng: 09273182749</h2>
+        </div>
+    </div>
+</body>
+<script>
+    $(function(){
+        $("#ps1").click(function(){
+                $("#mb2").css({"display":"none"})
+                $("#mb1").css({"display":"block"})
+                $("#mb3").css({"display":"none"})
+        })
+        $("#ps2").click(function(){
+                $("#mb1").css({"display":"none"})
+                $("#mb2").css({"display":"block"})
+                $("#mb3").css({"display":"none"})
+        })
+        $("#ps3").click(function(){
+                $("#mb1").css({"display":"none"})
+                $("#mb2").css({"display":"none"})
+                $("#mb3").css({"display":"block"})
+            
+        })
+    })
+</script>
+</html>

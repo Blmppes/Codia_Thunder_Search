@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <title>Game1</title>
+</head>
+<body style="font-family: din-2014,sans-serif; background-color: rgb(210, 231, 255);">
+    <style>
+        #logo:hover{
+            background-color: rgb(172, 172, 172);
+        }
+        .scrollGameInfo:hover{
+            background-color: rgb(19, 16, 29);
+        }
+        .scrollGameInfo{
+            border: solid 2px; 
+            background-color: chocolate;
+        }
+    </style>
+    <div style="background-color: black; height: 50px; width: 1350px;">
+        <div style = "width: 150px; height: 50px;" id = "logo"> 
+        <img  src="./Imgs/ubisoftLogo.png" style = "height: 50px; width: 100px;">
+        </div>
+        <div style="background-color: aliceblue;">
+            <img src="./Imgs/menuBar.PNG" id="menuBar" onclick="menu1()">
+        </div>
+    </div> 
+    <div style="z-index : 2;width: 800px; height: px; border: solid 2px; position: absolute; background-color: white; left: -803px;" id='Closemenu' >
+        <div style=" border: solid 2px;">
+            <img src="./Imgs/close.PNG" onclick="closeMenu1()">
+        </div>
+        <div style=" border: solid 2px; ">
+        <a style="text-decoration: none; color: black;" href="https://assassinscreed.ubisoft.com/game/en-us/home">
+            <h3>HOME</h3>
+        </a>
+        </div>
+        <div style=" border: solid 2px;" >
+            <h3 style="display: inline-block;">
+                GAME INFO
+            </h3> 
+            <img onclick="scroll1()" class="sc" style="display: inline-block; margin-left: 600px;" src="./Imgs/scrollButton.PNG"> 
+        </div>
+                <div class="scrollGameInfo">
+                    <a style="text-decoration: none; color:  white; " href="https://assassinscreed.ubisoft.com/game/en-us/odyssey/map">
+                        <h3>WORLDS</h3>
+                    </a>
+                </div>
+                <div class="scrollGameInfo">    
+                    <a style="text-decoration: none;color:  white;" href="https://assassinscreed.ubisoft.com/game/en-us/odyssey/combat">
+                        <h3>COMBAT</h3>
+                    </a>
+                </div>
+                <div class="scrollGameInfo">
+                    <a style="text-decoration: none;color:  white;" href="https://assassinscreed.ubisoft.com/game/en-us/odyssey/characters">
+                        <h3>CHARACTERS</h3>
+                    </a>
+                </div>
+                <div class="scrollGameInfo">
+                    <a style="text-decoration: none; color:  white;" href="https://assassinscreed.ubisoft.com/game/en-us/odyssey/rpg">
+                        <h3>PROGRESSION</h3>
+                    </a>
+                </div>
+        <div id="cover" style="position: absolute; top:170px; width: 798px; background-color : white; border: solid 2px;">
+            <div style="border: solid 2px;;">
+                <a  style="text-decoration: none; color: black;" href="https://assassinscreed.ubisoft.com/game/en-us/news-updates">
+                    <h3>NEWS & VIDEO</h3>
+                </a>
+            </div>
+            <div style=" border: solid 2px;" >
+                    <h3 style="display: inline-block;">
+                        COMMUNITY
+                    </h3> 
+                    <img onclick="scroll2()" id="sc1" style="display: inline-block; margin-left: 600px;" src="./Imgs/scrollButton.PNG"> 
+            </div> 
+                <div id="div10" style="opacity: 1;">
+                    <div  style=" border: solid 2px;">  
+                        <a style="text-decoration: none; color: black" href="https://assassinscreed.ubisoft.com/community/en-us/spotlight">
+                            <h3>
+                                SPOTLIGHT
+                            </h3>
+                        </a>
+                    </div>
+                    <div style=" border: solid 2px;">
+                        <a style="text-decoration: none; color: black" href="https://forums.ubi.com/forumdisplay.php/27-Assassin-s-Creed">
+                            <h3>
+                                DISCUSSION
+                            </h3>
+                        </a>
+                    </div>
+                    <div style=" border: solid 2px;">
+                        <a style="text-decoration: none; color: black" href="https://forums.ubi.com/forumdisplay.php/27-Assassin-s-Creed">
+                            <h3>
+                                PLAYER
+                            </h3>
+                        </a>
+                    </div>
+                    <div style=" border: solid 2px;">
+                        <a style="text-decoration: none; color: black" href="https://forums.ubi.com/forumdisplay.php/27-Assassin-s-Creed">
+                            <h3>
+                                GAMEPLAN
+                            </h3>
+                        </a>
+                    </div>
+                    <div style=" border: solid 2px;">
+                        <a style="text-decoration: none; color: black" href="https://forums.ubi.com/forumdisplay.php/27-Assassin-s-Creed">
+                            <h3>
+                            SOCIAL PULSE
+                            </h3>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div style="width: 806px; height: 370px;">
+        <style>
+        .pic{
+            position: absolute;
+            right: 40px;
+            top: 100px;
+            height: 450px;
+            width: 660px;
+        }
+        .trailer{
+            position: absolute;
+            top: 80px;
+            left: 50px;
+        }
+        </style>
+        <div>
+            <div id = "trailer1" class="trailer">
+                <h5 style="color: #bca06a;">
+                    LAUNCH TRAILER
+                </h5>
+                <h1 style="font-size: 25pt; font-weight: lighter; " class="trailer1">
+                    DISCOVERY TOUR: <br>
+                    ANCIENT GREECE<br>
+                    AVAILABLE NOW
+                </h1>
+                <h5>
+                    Available as a free update for all Assassin's Creed® Odyssey owners.
+                </h5>
+            </div>
+            <div>
+                <img id="wrapper1" class="pic" src="./Imgs/assassinCreedOdyssey.jpg" style="opacity: 1;">
+            </div>
+
+            <div style="opacity: 0; left: -50px;" id = "trailer2" class="trailer">
+                <h5 style="color: #bca06a;">
+                    UPLAY+
+                </h5>
+                <h1 style="font-size: 25pt; font-weight: lighter;" class="trailer1">
+                    PLAY ASSASSIN'S CREED<br>
+                    ODYSSEY WITH UPLAY+
+                </h1>
+                <h5>
+                    Access the premium edition* of Assassin's Creed Odyssey including <br>automatic updates and a growing catalogue of 100+ PC games on UPLAY+.
+                </h5>
+            </div>
+            <div>
+                <img id="wrapper2" class="pic" src="./Imgs/uplay.jpg" style="opacity: 0; right : -50px;">
+            </div>
+
+            <div style="opacity: 0; left: -50px;" id = "trailer3" class="trailer">
+                <h5 style="color: #bca06a;">
+                    LAUNCH TRAILER
+                </h5>
+                <h1 style="font-size: 25pt; font-weight: lighter;" class="trailer1">
+                    WATCH THE FATE OF <br>
+                    ATLANTIS DLC TRAILER
+                </h1>
+            </div>
+            <div>
+                <img id="wrapper3" class="pic" src="./Imgs/assassinCreedOdyssey1.jpg" style="opacity: 0; right : -50px">
+            </div>
+        </div>
+        <div style="position: absolute; top: 330px; left : 50px;">
+            <h5 style = "opacity: 1;" id = "clik" onclick="cliker('wrapper1','clik','trailer1')">
+                <span style="color: #bca06a;">LAUNCH TRAILER</span><br>
+                <span class="note">DISCOVERY TOUR: ANCIENT GREECE AVAILABLE NOW</span>
+            </h5>
+            
+            <h5 style = "opacity: 0.4;" id="clik1"  onclick="cliker('wrapper2','clik1','trailer2')">
+                <span style="color: #bca06a;">UPLAY+</span><br>
+                <span class="note">PLAY ASSASSIN'S CREED ODYSSEY WITH UPLAY+</span>
+            </h5>
+
+            <h5 style = "opacity: 0.4;" id="clik2"  onclick="cliker('wrapper3','clik2','trailer3')">
+                <span style="color: #bca06a;">LAUNCH TRAILER</span><br>
+                <span class="note">WATCH THE FATE OF ATLANTIS DLC TRAILER</span>
+            </h5>
+        </div>
+        <style>
+        .note{
+            font-size: medium;
+        }
+        </style>
+
+    </div> 
+
+    <br><br><br><br><br><br><br><br><br>
+
+    <div style="background-color: #191919; width: 100%; height: 1000px;">
+        <div style="left: 100px;" class="div">
+            <img class="img" src="./Imgs/assassinCreedSale65.jpg" >
+
+            <span class="span">
+                <p style="color: #bca06a; top: 50px;">DECEMBER 17, 2019</p>
+                <h3>SEASON PASS, ULTIMATE <br>
+                EDITION & MORE UP <br>
+                TO 65% OFF!</h3>
+                <h5>Plus, additional 20% off when you use<br>
+                the coupon code EXTRA20 at checkout.</h5>
+                <br><br><br><br><br><br><br><br><br><br>
+                <p class="p">
+                <a class="a" href="https://assassinscreed.ubisoft.com/game/en-us/news-updates/359737/season-pass-ultimate-edition-and-more-up-to-65-percent-off">READ MORE</a>
+                </p>
+            </span>
+        </div>
+
+        <div style="left: 500px;" class="div"> 
+            <img class="img" src="./Imgs/communityFinest.jpg">
+
+            <span class="span">
+                <p style="color: #bca06a; top: 50px;"> December 5, 2019</p>
+                <h3>COMMUNITY’S FINEST – <br>
+                NOVEMBER 2019</h3>
+                <h5>Let’s have a look at our favorite<br> creations from the community this month!</h5>
+                <br><br><br><br><br><br><br><br><br><br><br>
+                <p class="p">
+                <a class="a" href="https://assassinscreed.ubisoft.com/game/en-us/news-updates/359425/communitys-finest-november-2019">READ MORE</a>
+                </p>
+            </span>
+        </div>
+
+        <div style="left: 900px;" class="div">
+            <img class="img" src="./Imgs/rebelCollection.jpg">
+
+            <span class="span">
+                <p style="color: #bca06a; top: 50px;">November 29, 2019</p >
+                    <h3>ASSASSIN’S CREED®: THE <br>
+                    REBEL COLLECTION – <br>
+                    INTERVIEW WITH JEAN <br>
+                    GUESDON, ASHRAF ISMAIL, <br>
+                    AND DARBY MCDEVITT</h3>
+                    <h5>We sat down with Creative Director <br>
+                    Jean Guesdon, Game Director Ashraf<br>
+                    Ismail, and Lead Writer Darby<br> McDevitt to talk about Assassin’s<br> Creed® IV Black Flag® and its<br> development and impact on the<br> community.</h5>
+                    <br><br><br>
+                    <p class="p">
+                    <a class="a" href="https://assassinscreed.ubisoft.com/game/en-us/news-updates/359189/assassin-s-creed-the-rebel-collection-interview-with-jean-guesdon-ashraf-ismail-and-darby-mcdevitt">READ MORE</a>
+                    </p>
+            </span>
+        </div>
+    </div>
+    <style>
+        .p{
+            text-align: right;
+        }
+
+        .a{
+            color: black;
+            text-decoration: none;
+        }
+
+        .div{
+            background-color: white;
+            height: 600px;
+            position: absolute;
+            top: 700px;
+            display: block;
+        }
+
+        .span{
+            text-align: center;
+        }
+
+        .img{
+            width: 323px;
+            border-bottom: solid 5px #bca06a;
+            display: block;
+        }
+            
+        
+    </style>
+    
+    <br><br><br><br><br><br><br><br>
+
+
+    
+        <h1 style="text-align: center;">Assassin's Creed</h1>
+    <div style="border: solid 5px black; background-image: url(./Imgs/background.jpg);">
+        <h2 style="text-align: center; color: dodgerblue;"><u>Preview</u></h2>
+        <p style="font-size: large; text-align: center; color: dodgerblue;"><i>Assassin's Creed is a series of game that was developed by Ubisoft. It was originated from a story with the same name.</i></p>
+        <img style="width: 300px; margin-left: 530px;" src="./Imgs/assassinCreed2.jpg">
+    </div>
+
+    <br>
+
+    <div style="border: solid black 5px; background-image: url(./Imgs/background.jpg); color: rgb(92, 116, 121);">
+        <p><b>Assassin's Creed</b> is an action-adventure, stealth video game franchise, created by Patrice Désilets, Jade Raymond and Corey May. Developed and published by Ubisoft. <br>
+        The game is about a war between the order of the Assassins and the Templars. They both fight for peace, the Assassins fight for peace in freedom but the Templars want peace but under their control. IN this game, take place in characters in Assassin team and the last target is to safe the world from the bane of "The First Civillization" but we have to unlock the memories to know what to do so the Templars are also killed - in our player's memories. </p>
+        <h2 style="text-align: center;"><u>Premise</u></h2>
+        <p>The Assassin's Creed games primarily revolve around the rivalry between two ancient secret societies — the Assassins and the Templar — and their indirect relation to an ancient species pre-dating humanity, referred to within the games as The First Civillization, whose society, along with much of Earth's biosphere, was destroyed by a massive solar storm thousands of years before the games. The games' real-world chronological setting begins in the year 2012, but the gameplay was mostly played in historical settings.</p>
+        <img style="width:500px;" src="./Imgs/assassinCreedUnityScene.jpg">
+        <img style="width:300px;" src="./Imgs/piecesOfEden.PNG">   
+    </div>
+
+    <script>
+        var turn = "cover"
+        function menu1(){
+            var a = document.getElementById('Closemenu')
+            a.style.left="0px"
+            a.style.transition='left 1s'
+        };
+        
+        function closeMenu1(){
+            var b = document.getElementById('Closemenu')
+            b.style.left="-803px"
+            b.style.transition='left 1s'
+        };
+        function scroll1(){
+            var c = document.getElementById('cover');
+            var d = document.getElementById('sc')
+
+            if(turn == "cover"){
+                c.style.top = "426px";
+                turn = "uncover"
+                d.src='./Imgs/scrollUpButton.PNG'
+            }
+            else{
+                c.style.top="170px"
+                turn="cover"
+                d.src = "./Imgs/scrollButton.PNG"
+            }
+        };
+
+        var chek = 0
+
+        var img = ['./Imgs/assassinCreedOdyssey.jpg','./Imgs/uplay.jpg', './Imgs/assassinCreedOdyssey1.jpg']
+
+        /*
+        function wrap(){
+            var e = document.getElementById('wrapper')
+            if(chek == 2){
+                chek = 0
+            }
+            else chek +=1
+
+            if(chek == 0){
+                e.src=("./")
+            }
+        };
+        */
+        var present_trailer = "trailer1";
+        var present_img = "wrapper1";
+        var present_font = "clik";
+        function cliker(x,ss,tt){
+           if(x == present_img) return;
+           else{
+               var a = document.getElementById(present_trailer);
+               var b = document.getElementById(present_img);
+               var c = document.getElementById(tt);
+               var d = document.getElementById(x);
+               document.getElementById(present_font).style.opacity = 0.4;
+               document.getElementById(ss).style.opacity = 1;
+               // lam nhung cai hien tai bien mat
+               a.style.left = "-50px";
+               a.style.opacity = 0;
+               b.style.right = "-50px";
+               b.style.opacity = 0;
+               a.style.transition = 'all 1s';
+               b.style.transition = 'all 1s';
+               // lam hien ra nhung cai click vao
+               c.style.left = "50px";
+               c.style.opacity = 1;
+               d.style.right = "40px";
+               d.style.opacity = 1;
+               c.style.transition = 'all 1s';
+               d.style.transition = 'all 1s';
+               // luu lai nhung thu hien tai
+               present_trailer = tt;
+               present_img = x;
+               present_font = ss;
+           }
+        };
+
+        function scroll2(){
+            var c = document.getElementById('cover');
+            var d = document.getElementById('sc1')
+
+            if(turn == "cover"){
+                c.style.top = "426px";
+                
+                d.src='./Imgs/scrollUpButton.PNG'
+            }
+            else{
+                c.style.top="170px"
+                turn="cover"
+                d.src = "./Imgs/scrollButton.PNG"
+            }
+        };
+        /*            <div style=" border: solid 2px;">
+            <a  href="https://support.ubi.com/en-us/games/5046e">
+                    <h3>SUPPORT</h3>
+                </a>
+            </div>
+            <div style=" border: solid 2px;">
+                <a href="https://assassinscreed.ubisoft.com/game/en-us/games">
+                    <h3>ALL GAMES</h3>
+                </a>
+            </div>
+            <div style=" border: solid 2px;">
+                <a href="https://assassinscreed.ubisoft.com/game/en-us/odyssey/dlc">
+                    <h3>POST LAUNCHH</h3>
+                </a>
+            </div>        
+            <div style=" border: solid 2px;">
+                <a style="text-decoration: none; color: black" href="https://assassinscreed.ubisoft.com/game/en-us/photo-mode">
+                    <h3>PHOTO MODE</h3>
+                </a>
+            </div>
+            <div style=" border: solid 2px;">
+                <a style="text-decoration: none; color: black" href="https://assassinscreed.com/story-creator-mode/">
+                    <h3>STORY CREATOR MODE</h3>
+                </a>
+            </div>*/
+    </script>
+</body>
+</html>

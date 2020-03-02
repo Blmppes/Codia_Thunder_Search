@@ -1,0 +1,129 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="icon" href="images-main/logo-2.png" type="image/icon type">
+        <link href="style.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" rel="stylesheet">
+    </head>
+    <body>
+        <div id="intro1">
+                <h1 style="color:white;font-size: 60px;position: absolute;top: 200px; left: 350px">Bienvenue sur notre site</h1>
+            </div>
+        <div id="intro2">
+            <h1 style="color:white;font-size: 50px;position: absolute;top: 0px; left: 500px;text-decoration: underline wavy;cursor: pointer;">Thundersearch</h1>
+            <a id="continue" onclick="unintro()">Continuer</a>
+        </div>
+        <div id="languages">
+            <img src="images-main/france-flag-3d-icon-64.png" onclick="window.open('index-france.html')" style="width:32px;height:32px;">
+            <img src="images-main/united-states-of-america-flag-3d-icon-64.png" onclick="window.open('index.html')" style="width:32px;height:32px;margin-top: 2px">
+            <img id="vie" src="images-main/vietnam-flag-3d-icon-64.png" onclick="window.open('index-vie.html')" style="width:32px;height:32px;margin-top: 2px">
+        </div>
+        <i class="fas fa-sort-down" id="arr" style="display: none;font-size: 20px;margin: 5px 2px;cursor: pointer;position: absolute;right: 20px;top: 80px;z-index: 1;" onclick="show_languages()"></i>
+        <div id="container" style="display: none;">
+            <div class="slide-show" style="display:none">
+                <img src="images-main/assasin creed.jpg" id="slide-img1">
+                <img src="images-main/gta 5.jpg" id="slide-img2">
+                <img src="images-main/far cry5.jpg" id="slide-img3">
+                <img src="images-main/watch dogs 2.jpg" id="slide-img4">
+                <img src="images-main/call of duty.jpg" id="slide-img5">
+            </div>
+            <div id="header">
+                <img src="images-main/logo.png" style="cursor: pointer;width: 235px;height: 90px;margin: 50px 70px;background-color: white;border-radius: 10px;">
+                <div class="topnav">
+                    <a class="active" onclick="scrolltopart('home')">Accueil</a>
+                    <a id="most-popular" onclick="scrolltopart('most-popular')">Jeux populaires</a>
+                    <a onclick="scrolltopart('trailer')">Bande annonce</a>
+                    <a onclick="scrolltopart('contact')">Contact</a>
+                    <a href="about-france.html">Sur</a>
+                </div>
+                <h1 style="color: red;padding:8px;border:none;border-radius: 10px;height: 60px;font-size: 50px;margin: 300px 0px 0px 0px;">Trouvez votre jeu préféré</h1>
+                <div class="searchBox" onmouseover="changeSearchBar()">
+                    <input class="searchInput" type="text" name="" placeholder="Search" onkeyup="suggest()">
+                    <button class="searchButton" href="#" onclick="search()">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div id="suggest-container">
+                    <div id="suggestion1" class="suggestion" onclick="fill_blank('1')"></div>
+                    <div id="suggestion2" class="suggestion" onclick="fill_blank('2')"></div>
+                    <div id="suggestion3" class="suggestion" onclick="fill_blank('3')"></div>
+                    <div id="suggestion4" class="suggestion" onclick="fill_blank('4')"></div>
+                    <div id="suggestion5" class="suggestion" onclick="fill_blank('5')"></div>
+                </div>
+            </div>
+            <a href="#" class="scrollToTop">^</a>
+            <div id="article">
+                <h1 id="most-popular-games-header" style="transition: 0.5s;font-size: 45px;text-align: center;background-color: red;width: 1345px;padding: 5px 0px;">Jeux populaires</h1>
+                <section id="most-popular-games" style="display: flex;">
+                    <div id="gta5" class="games" style = "border: 3px solid orange;background-color: orange;">
+                        <h1 style="text-align: center;font-size: 30px;margin: 15px 0px">GTA 5</h2>
+                        <img src="images-main/bt-gta5.jpg" style="width: 300px;height: 303px;border-bottom-left-radius: 17px;border-bottom-right-radius: 16px">
+                    </div>
+                    <div id="pupg" class="games" style = "border: 3px solid rgb(255, 62, 62);background-color: rgb(255, 62, 62);" onclick="window.open('A.PUBG-france.html')">
+                        <h1 style="text-align: center;font-size: 30px;margin: 15px 0px" >PUBG</h2>
+                        <img src="images-main/bt-pubg.jpg" style="width: 300px;height: 303px;border-bottom-left-radius: 17px;border-bottom-right-radius: 17px">
+                    </div>
+                    <div id="call of duty" class="games" style = "border: 3px solid black;background-color: black;" onclick="window.open('assassins-creed.html')">
+                        <h1 style="text-align: center;font-size: 30px;margin: 15px 0px;color:white">Assasin'Creed</h2>
+                        <img src="images-main/bt-assasin's creed.jpg" style="width: 300px;height: 303px;border-bottom-left-radius: 17px;border-bottom-right-radius: 17px">
+                    </div>
+                </section>
+                <h1 style="font-size:47px;color: white;border: 2px solid rgb(46, 154, 255);background-color: rgb(46, 154, 255);text-align: center;width: 1345px">Bande annonce</h1>
+                <section id="trailer">
+                    <h2 style="margin: 0px 72px;font-size:30px;">GTA 5</h2>
+                    <div id="inner-trailer">
+                        <video width="600" height="400" controls loop style="margin-left: 72px">
+                            <source src="videos/Grand Theft Auto V Official Gameplay Video (online-video-cutter.com).mp4" type="video/mp4">
+                            Video is not supported by your browser
+                        </video>
+                        <div id="scroll-trailer">
+                            <div class="box" onclick="change_video('GTA 5')">GTA 5</div>
+                            <div class="box" onclick="change_video('Assasins Creed')">Assasin's Creed</div>
+                            <div class="box" onclick="change_video('Call Of Duty')">Call Of Duty</div>
+                            <div class="box" onclick="change_video('Playerunknowns Battlegrounds')">Playerunknown's Battlegrounds</div>
+                            <div class="box" onclick="change_video('Watch Dogs 2')">Watch Dogs 2</div>
+                            <div class="box" onclick="change_video('Far cry 5')">Far cry 5</div>
+                            <div class="box" onclick="change_video('Minecraft')">Minecraft</div>
+                        </div>
+                    </div>
+                </section>
+                <h1 style="text-align: center;font-size: 45px;width: 1345px;margin: 0px;;">Contact</h1>
+                <form id="contact">
+                    <h2 style="position: absolute;top: 30px;">Prénom:</h2>
+                    <input name="name" type="text" style="position: absolute;top: 90px;width: 270px;height: 30px;border-radius: 5px;font-size: 14px;color: #777;background-color: #fff;border: 1px solid #ccc;">
+                    <h2 style="position: absolute;top: 30px;left: 275px">Adresse e-mail:</h2>
+                    <input name="email" type="text" style="position: absolute;top: 90px;left: 275px;width: 270px;height: 30px;border-radius: 5px;font-size: 14px;color: #777;background-color: #fff;border: 1px solid #ccc;">
+                    <h2 style="position: absolute;top: 110px">Nom du sujet:</h2>
+                    <input id="subject" name="topic" type="text" style="position: absolute;top: 170;width: 540px;height: 30px;border-radius: 5px;font-size: 14px;color: #777;background-color: #fff;border: 1px solid #ccc;">
+                    <h2 style="position: absolute;top: 185px">Contenu:</h2>
+                    <textarea id="text-content" cols="65" rows="13"></textarea>
+                    <button id="sendButton" style="position: absolute;top: 480px;width: 125px;height: 40px;color:white;font-size: 30px;background-color: rgb(46, 154, 255);border-radius: 5px;border:none;" onclick="send()">Envoyer</button>
+                </form>
+            </div>
+            <div id="footer">
+                <div id="all-game">
+                    <h2 style="color: white;margin: 20px 100px;">Jeux populaires</h2>
+                    <ul>
+                        <li>Assasin's Creed Odyssey</li>
+                        <li>Far Cry 5</li>
+                        <li>GTA 5</li>
+                        <li>Watch Dogs 2</li>
+                        <li>PlayerUnknown's Battlegrounds</li>
+                    </ul>
+                </div>
+                <div id="contact2">
+                    <h2 style="color: white;margin: 20px 100px;">Contactez nous</h2>
+                    <ul>
+                        <li><a href="https://www.facebook.com/khoa.nguyenviet.1000469" target="_blank" style="text-decoration: none;color:white">Facebook</a></li>
+                        <li><a onclick="alert('dotrunghieustaw@gmail.com')" style="text-decoration: none;">Gmail</a></li>
+                    </ul>
+                </div>
+                <h2 style="color:white;margin: 40px 0px 0px 100px;">Hotline: 09273182749</h2>
+            </div>
+        </div>
+    </body>
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
+</html>

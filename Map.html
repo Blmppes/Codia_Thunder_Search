@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html style="overflow-x: hidden;">
+    <head>
+      
+      <img src="images-pubg/13+TEEN.png">  
+
+      <img src="images-pubg/background-winter.jpg" style="z-index: -1;width: 100%;position:absolute;top:0px;left:0px" >
+     
+      
+        <div >
+     <center> <div style="position: absolute;left: 0px;top:0px">
+          
+          <img src="images-pubg/PUBG_LOGO.jpg" width="350px" height="90px" >
+        
+          <style>
+            ul {
+              list-style-type: none;
+              margin: 0;
+              padding: 0;
+              overflow: hidden;
+              background-color: #333;
+            }
+            
+            li {
+              float: left;
+            }
+            
+            li a, .dropbtn {
+              display: inline-block;
+              color: white;
+              text-align: center;
+              padding: 14px 181.75px;
+              text-decoration: none;
+            }
+            
+            li a:hover, .dropdown:hover .dropbtn {
+              background-color:darkgrey;
+            }
+            
+            li.dropdown {
+              display: inline-block;
+            }
+            
+            .dropdown-content {
+              display: none;
+              position: absolute;
+              background-color: darkgray;
+              min-width: 1px;
+              box-shadow: 0px 8px 16px 10px rgba(255, 254, 254, 0.2);
+              z-index: 1;
+            }
+            
+            .dropdown-color-a {
+              color: black;
+              padding: 12px 14px;
+              text-decoration: none;
+              display: block;
+              text-align: left;
+             
+              
+            }
+            
+            .dropdown-content a {
+              background-color: black;
+              }
+            
+            .dropdown:hover .dropdown-content {
+              display: block;
+            }
+            </style>
+            <img src="images-pubg/background-winter2.jpg" width="100%" style="z-index: -1;position: absolute;top:710px;left:0px;width: 1500px">
+            </head>
+           
+            
+            <ul>
+              <li><a href="A.PUBG.html"><b> PUBG </b></a></li>
+              <li><a href="Map.html"><b>Map</b></a></li>
+              <li class="dropdown">
+                <a class="dropbtn"><b>Weapons Info  </b></a>
+                <div class="dropdown-content">
+                  <a href="AR-SMG-DMR.html">AR;SMG;LMG</a>
+                  <a href="SG_HG_MELEE.html">------SG------</a>
+                  <a href="SR_DMR_OTHER.html">------SR-------</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          </center>
+    </head>
+</html>
+
+
+    <img src="map1.jpg" style="position: absolute; top:200px; left: 275px " width="60%" id="m1">
+    <p id="n1" style="position: absolute;top: 1000px;left:30px; font-size: 25px;color: red;border: black 6px solid;background-color: rgb(255, 255, 255, 0.5);">ERANGEL-PUBG's original map, Erangel is an 8x8 island whose terrain ranges from open grasslands to tall mountains, with cities and towns mixed in-between. Two bridges connect the larger portion of the island to Erangel's Military Base, making for a dangerous route to and from the small island.</p>
+
+
+
+    <img src="map2.jpg" style="position: absolute; top:200px; left: 275px ; opacity: 0;" width="60%" id="m2" >
+    <p id="n2" style="position: absolute;top: 950px;left:30px; font-size: 25px;color: red;opacity: 0;border: black 6px solid;background-color: rgb(255, 255, 255, 0.5)">Miramar is the traditional 8x8 map size with more of a desert theme. By sheer land mass, it is the biggest map in PUBG with the vast majority of the space being filled by land and a couple of small cities. It's rough terrain means off-road driving is more difficult and the lack of trees make for a sniper's haven.</p>
+    
+    
+
+
+    <img src="map3.jpg" style="position: absolute; top:200px; left: 275px ;opacity: 0" width="60%" id="m3">
+    <p id="n3" style="position: absolute;top: 950px;left:30px; font-size: 25px;color: red;opacity: 0;border: black 6px solid;background-color: rgb(255, 255, 255, 0.5)">SANGHOK-PUBG's smallest map, Sanhok, is a dense island full of trees and hills. Rivers split the island into 3 major sections, so players will have to assess the risks of crossing through water or over one of the island's many bridges. Sanhok's size and available loot lead to a much more hectic and fast-paced battle than traditional PUBG maps.</p>
+    
+
+
+
+    <img src="map4.jpg" style="position: absolute; top:200px; left: 275px;opacity: 0 " width="60%" id="m4">
+    <p id="n4" style="position: absolute;top: 950px;left:30px; font-size: 25px;color: red;opacity: 0;border: black 6px solid;background-color: rgb(255, 255, 255, 0.5)">VIKENDI-The snow-covered fields of Vikendi bring a unique new feel to PUBG in this 6x6 map. With frozen bodies of water, special vehicles to traverse the snowy landscapes, and footprints to track your enemies, Vikendi is an entirely different way to experience thrilling PUBG gameplay.</p>
+    
+
+
+
+    
+
+
+    <script>
+    var count = 1;
+    function test(){
+    alert("ascs");
+    var nextcount = 0;
+    if(count == 4){
+        nextcount = 1;
+    }else{
+        nextcount = count + 1
+    }
+    var a = document.getElementById('m'+count)
+    var b = document.getElementById('m'+nextcount)
+    var c = document.getElementById('n'+count)
+    var d = document.getElementById('n'+nextcount)
+    a.style.opacity = "0";
+    b.style.opacity = "1";
+    a.style.transition = "1.5s";
+    b.style.transition = "1.5s";  
+    c.style.opacity = "0";
+    d.style.opacity = "1";
+    c.style.transition = "1.5s";
+    d.style.transition = "1.5s";
+    if(count == 4){
+        count = 1;
+    }else{
+        count += 1;
+    }
+  }
+    setInterval(test,2000);
+
+
+    
+    </script>
+  
+    
+    
