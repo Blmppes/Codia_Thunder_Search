@@ -285,3 +285,5 @@ function test(){
     }
 }
 setInterval(test,5000);
+
+//Login section
